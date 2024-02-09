@@ -1,0 +1,20 @@
+/* create var */
+:root {
+  --tea-green: rgb(237, 244, 237);
+  --light-green: #aceca1ff;
+  --olivine: #96be8cff;
+  --asparagus: #629460ff;
+  --dark-green: #243119ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#root {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+  overflow: scroll;
+}

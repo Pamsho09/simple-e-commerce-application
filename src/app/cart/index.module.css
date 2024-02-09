@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex: 1;
+}
+.container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
+}
+.cart__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid var(--dark-green);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.cart__item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+  margin-right: 20px;
+}
+.cart__item__info__container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.cart__item__info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 10px;
+  gap: 10px;
+}
+.cart__item__info__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--dark-green);
+
+  margin: 0;
+}
+.cart__item__info__price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--dark-green);
+    margin: 0;
+}
+.cart__item__info__quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.cart__item__info__quantity__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--dark-green);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cart__item__info__quantity__quantity .total {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px)
+  {
+    .cart {
+      width: 50%;
+    }
+    .container__button{
+      width: 50%;
+    }
+  }

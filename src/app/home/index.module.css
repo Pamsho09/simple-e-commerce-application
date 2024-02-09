@@ -1,0 +1,29 @@
+.container {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.container__products {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.container__search {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 20px;
+}

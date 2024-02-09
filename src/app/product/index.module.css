@@ -1,0 +1,119 @@
+.container {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: relative;
+}
+.container__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.container__img__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.container__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+
+}
+.container__info__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--dark-green);
+    width: 100%;
+}
+.container__info__description {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--dark-green);
+    width: 100%;
+}
+.container__info__price {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+.container__info__ingredients {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}
+.container__info__ingredients__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--dark-green);
+    width: 100%;
+}
+.container__info__ingredients__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+}   
+.container__info__ingredients__list__item {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--dark-green);
+    width: 100%;
+
+}
+
+.container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+/* creade media query when is most of movile contenier fles row */
+
+@media screen and (min-width: 768px){
+
+    .container {
+        flex-direction: row;
+        padding: 20px;
+        flex: 1;
+        gap:10px;
+    }
+    .container__info{
+        width: 30%;
+        padding: 0 20px;
+        background-color: var(--tea-green);
+        border-radius: 15px;
+    }
+    .container__img {
+        width: 70%;
+        height: 100%;
+        margin-bottom: 0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .container__img__img {
+        border-radius: 5px;
+    }
+    .container__img__img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,23 @@
+.container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px ;
+  height: 50px;
+  background-color: var(--asparagus);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  flex: 1;
+  box-sizing: border-box;
+}
+.container__button:hover {
+  background-color: var(--tea-green);
+    color: var(--asparagus);
+    border: 2px solid var(--asparagus);
+
+}
